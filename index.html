@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>tindeeer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <script src="animations.js"></script>
+
+    <script src="clock.js"></script>
+
+    <script src="turnoff.js"></script>
+
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Welcome to the most epic tinder!</h1>
+    </div>
+    <main>
+        <div class="transparente">
+            <button class="power-button" onClick="check_onoff()"></button>
+            <button class="volume-button-up" onClick="volume_up()"></button>
+            <button class="volume-button-down" onClick="volume_down()"></button>
+        </div>
+
+        <div class="imagen-container">
+            <img src="images/movilbien.png" alt="encima de todo" class="encima">
+        </div>
+
+        <section id="movil">
+                <header>
+                    <img class="logo" src="images/logotinderbien.png" alt="Logo de Tinder" width="100"/>
+                    <img class="tinder" src="images/tindertxt.png" alt="parte de arriba"/>
+                    <div id="clock">hello!</div>
+                    
+                </header>
+                <div class="cards">
+
+                    <article class="fotito">
+                        <img src="images/otro4.jpg" alt="la wapa" />
+                        <h2>natasha<span>24</span></h2>
+                        <div class="choice naah">naah</div>
+                        <div class="choice likee">likee</div>
+                    </article>
+
+                    <article class="fotito">
+                        <img src="images/otro3.jpg" alt="steve" />
+                        <h2>steve<span>26</span></h2>
+                        <div class="choice naah">naah</div>
+                        <div class="choice likee">likee</div>
+                    </article>
+
+                    <article class="fotito">
+                        <img src="images/otro2.jpg" alt="deadpool" />
+                        <h2>deadpool<span>33</span></h2>
+                        <div class="choice naah">naah</div>
+                        <div class="choice likee">likee</div>
+                    </article>
+
+                    <article class="fotito">
+                        <img src="images/otro.jpg" alt="ironman" />
+                        <h2>ironman <span>37</span></h2>
+                        <div class="choice naah">naah</div>
+                        <div class="choice likee">likee</div>
+                    </article>
+
+                    <article class="fotito">
+                        <img src="images/eeeel.webp" alt="spiderman" />
+                        <h2>spiderman <span>17</span></h2>
+                        <div class="choice naah">naah</div>
+                        <div class="choice likee">likee</div>
+                    </article>
+
+                    <article class="fotito">
+                        <img src="images/ellaaaa.jpg" alt="spiderwoman" />
+                        <h2>spiderwoman <span>16</span></h2>
+                        <div class="choice naah">naah</div>
+                        <div class="choice likee">likee</div>
+                    </article>
+
+                    <span id ="message">
+                        you liked everyone! <br />
+                        this for you! --> 🐣
+                    </span>
+                </div>
+
+                <div class="volumenes">
+                    <article>
+                        <img src="images/volumen0.png" alt="volumen" id="volumen0" class="volumen" >
+                        <img src="images/volumen1.png" alt="volumen" id="volumen1" class="volumen">
+                        <img src="images/volumen2.png" alt="volumen" id="volumen2" class="volumen">
+                        <img src="images/volumen3.png" alt="volumen" id="volumen3" class="volumen">
+                        <img src="images/volumen4.png" alt="volumen" id="volumen4" class="volumen">
+                        <img src="images/volumen5.png" alt="volumen" id="volumen5" class="volumen">
+                        <img src="images/volumen6.png" alt="volumen" id="volumen6" class="volumen">
+                        <img src="images/volumen7.png" alt="volumen" id="volumen7" class="volumen">
+                    </article>
+                </div>
+
+                <div class="liked"></div>
+
+                <footer>
+                    <button class="is-undo" aria-label="undo" onClick="refreshPage()"></button>
+                    <button class="is-remove is-big" aria-label="remove" onClick="removecard()"></button>
+                    <button class="is-star" aria-label="star" onClick="showLikedCards()"></button>
+                    <button class="is-fav is-big" aria-label="fav" onClick="likedcard()"></button>
+                    <button class="is-zap" aria-label="zap" onClick="turnoff()"></button>
+                </footer>
+        </section>
+    </main>
+    <div class="abajo">I hope you like it! You can do cool things
+        such as <br> like, dislike, view liked history, turn on/off the phone<br>
+        and set the volume up or down!
+        Thanks for visiting!
+    </div>
+    <footer class="colorido"></footer>
+</body>
+</html>
